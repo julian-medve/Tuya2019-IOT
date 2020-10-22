@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/wh_70"
+    android:layout_height="@dimen/wh_80">
+
+    <RelativeLayout
+        android:id="@+id/rl_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/color_inactive">
+
+        <LinearLayout
+            android:id="@+id/lin_wifi_active"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="3dp">
+
+            <TextView
+                android:id="@+id/tv_wifi_active"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WF"
+                android:textColor="@color/white"
+                android:textSize="7dp"/>
+
+            <ImageView
+                android:id="@+id/img_wifi_active"
+                android:layout_width="@dimen/wh_10"
+                android:layout_height="@dimen/wh_10"
+                android:src="@drawable/ic_show_inactive_circle" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/item_devices_image"
+            android:layout_width="@dimen/wh_30"
+            android:layout_height="@dimen/wh_30"
+            android:src="@mipmap/add"
+            android:scaleType="centerInside"
+            android:layout_marginTop="@dimen/wh_15"
+            android:layout_centerHorizontal="true"
+            android:alpha="0.3"/>
+
+        <TextView
+            android:id="@+id/item_devices_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/item_devices_image"
+            android:gravity="center_horizontal"
+            android:text="Image"
+            android:textColor="@color/text_white"
+            android:textSize="9dp"
+            android:alpha="0.3"
+            android:layout_marginTop="@dimen/wh_10"/>
+    </RelativeLayout>
+</LinearLayout>

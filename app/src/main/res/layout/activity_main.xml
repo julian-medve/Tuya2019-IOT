@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/background"
+    tools:context=".activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fragment_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_marginTop="@dimen/mg_30"
+                android:layout_gravity="center"
+                android:src="@drawable/head"
+                android:layout_width="@dimen/mg_70"
+                android:layout_height="@dimen/mg_70"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/mg_20"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/main_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_main"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/ts_22"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_marginTop="@dimen/mg_5"
+                    android:id="@+id/main_name"
+                    android:gravity="center"
+                    android:textSize="@dimen/ts_18"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FDC200"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_margin="@dimen/mg_10"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <ImageView
+                        android:id="@+id/img_icon"
+                        android:paddingTop="@dimen/mg_15"
+                        android:paddingBottom="@dimen/mg_10"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/mg_20"
+                        android:layout_width="80dp"
+                        android:layout_height="70dp"/>
+
+                    <TextView
+                        android:id="@+id/txt_description"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+
+                    <!--                <ImageView-->
+                    <!--                    android:id="@+id/img_getButton"-->
+                    <!--                    android:layout_gravity="end"-->
+                    <!--                    android:src="@drawable/ic_reply"-->
+                    <!--                    android:layout_width="@dimen/mg_20"-->
+                    <!--                    android:layout_height="@dimen/mg_20"/>-->
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/mg_20"
+                    android:layout_height="80dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:id="@+id/txt_temperature"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="start"
+                            android:textColor="@android:color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/txt_temperature_title"
+                            android:text="Temp.zewn"
+                            android:textColor="@android:color/white"
+                            android:layout_gravity="start"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:id="@+id/txt_humidity"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="start"
+                            android:textColor="@android:color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/txt_humidity_title"
+                            android:text="Wilgotność na ze..."
+                            android:textColor="@android:color/white"
+                            android:layout_gravity="start"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:id="@+id/txt_presure"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@android:color/white"
+                            android:layout_gravity="start"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/txt_presure_title"
+                            android:text="Ciśn.pow"
+                            android:textColor="@android:color/white"
+                            android:layout_gravity="start"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/view_sub_menu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wh_80"
+        android:layout_gravity="bottom|start"
+        android:layout_marginBottom="@dimen/wh_85"
+        android:visibility="gone"/>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_marginBottom="@dimen/wh_80">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_home_menu"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wh_80"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:id="@+id/new_profile"
+                android:layout_width="@dimen/mg_70"
+                android:layout_height="@dimen/wh_80"
+                android:background="@drawable/menu_background"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2">
+
+                        <ImageView
+
+                            android:layout_width="@dimen/wh_40"
+                            android:layout_height="@dimen/wh_40"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:src="@mipmap/profile"
+                            android:alpha="0.3"/>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_marginTop="@dimen/mg_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Profil"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/wh_10"
+                            android:layout_gravity="top|center_horizontal"
+                            android:alpha="0.3"/>
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/new_voice"
+                android:layout_width="@dimen/wh_70"
+                android:layout_height="@dimen/wh_80"
+                android:background="@drawable/menu_background"
+                app:layout_constraintStart_toEndOf="@+id/new_profile"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2">
+
+                        <ImageView
+                            android:layout_width="@dimen/wh_40"
+                            android:layout_height="@dimen/wh_40"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:src="@mipmap/ic_wave"
+                            android:alpha="0.3"/>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_marginTop="@dimen/mg_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mowa"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/wh_10"
+                            android:layout_gravity="top|center_horizontal"
+                            android:alpha="0.3"/>
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/new_setting"
+                android:layout_width="@dimen/wh_70"
+                android:layout_height="@dimen/wh_80"
+                android:background="@drawable/menu_background"
+                app:layout_constraintStart_toEndOf="@+id/new_voice"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2">
+
+                        <ImageView
+                            android:layout_width="@dimen/wh_40"
+                            android:layout_height="@dimen/wh_40"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:src="@mipmap/ic_room15"
+                            android:alpha="0.3"/>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_marginTop="@dimen/mg_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Opcje"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/wh_10"
+                            android:layout_gravity="top|center_horizontal"
+                            android:alpha="0.3"/>
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/new_addroom"
+                android:layout_width="@dimen/wh_70"
+                android:layout_height="@dimen/wh_80"
+                android:background="@drawable/menu_background"
+                app:layout_constraintStart_toEndOf="@+id/new_setting"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2">
+
+                        <ImageView
+                            android:layout_width="@dimen/wh_40"
+                            android:layout_height="@dimen/wh_40"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:src="@mipmap/add_room"
+                            android:alpha="0.3"/>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_marginTop="@dimen/mg_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dodaj Pokój"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/wh_10"
+                            android:layout_gravity="top|center_horizontal"
+                            android:alpha="0.3"/>
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/new_adddevice"
+                android:layout_width="@dimen/wh_70"
+                android:layout_height="@dimen/wh_80"
+                android:background="@drawable/menu_background"
+                app:layout_constraintStart_toEndOf="@+id/new_addroom"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="5">
+
+                        <ImageView
+                            android:layout_width="@dimen/wh_40"
+                            android:layout_height="@dimen/wh_40"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:src="@mipmap/add_device"
+                            android:alpha="0.3"/>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3">
+
+                       <LinearLayout
+                           android:orientation="vertical"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent">
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="Dodaj"
+                               android:textColor="@color/white"
+                               android:textSize="@dimen/wh_10"
+                               android:layout_gravity="top|center_horizontal"
+                               android:alpha="0.3"/>
+
+                           <TextView
+
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="Urządzenie"
+                               android:textColor="@color/white"
+                               android:textSize="@dimen/wh_10"
+                               android:layout_gravity="top|center_horizontal"
+                               android:alpha="0.3"/>
+
+                       </LinearLayout>
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/new_logout"
+                android:layout_width="@dimen/wh_70"
+                android:layout_height="@dimen/wh_80"
+                android:background="@drawable/menu_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/new_adddevice"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2">
+
+                        <ImageView
+                            android:layout_width="@dimen/wh_40"
+                            android:layout_height="@dimen/wh_40"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:src="@mipmap/exit"
+                            android:alpha="0.3"/>
+                    </FrameLayout>
+
+                    <FrameLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_marginTop="@dimen/mg_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Wyloguj się"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/wh_10"
+                                android:layout_gravity="top|center_horizontal"
+                                android:alpha="0.3"/>
+
+
+                        </LinearLayout>
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wh_80"
+        android:layout_gravity="bottom|end"
+        android:orientation="horizontal"
+        android:background="@color/color_inactive">
+
+        <FrameLayout
+            android:id="@+id/frame_home_background"
+            android:layout_width="@dimen/mg_70"
+            android:layout_height="match_parent"
+            android:background="@color/black_80">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2">
+
+                    <ImageView
+                        android:id="@+id/img_home"
+                        android:layout_width="@dimen/wh_40"
+                        android:layout_height="@dimen/wh_40"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:src="@drawable/ic_home"
+                        android:alpha="0.3"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DOM"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/wh_10"
+                        android:layout_gravity="top|center_horizontal"
+                        android:alpha="0.3"/>
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/view_rooms"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

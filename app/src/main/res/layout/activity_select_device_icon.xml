@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SelectDeviceIconActivity"
+    android:orientation="vertical"
+    android:background="@mipmap/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wh_50"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="@dimen/wh_40"
+                android:layout_height="@dimen/wh_40"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="@dimen/wh_10"
+                android:src="@drawable/ic_action_back"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Select icon of device"
+                android:textSize="@dimen/wh_20"
+                android:textColor="@color/white"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#555"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rel_dev_icon"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/wh_60"
+        android:layout_marginLeft="@dimen/wh_30"
+        android:layout_marginRight="@dimen/wh_30"
+        android:paddingTop="@dimen/wh_40"
+        android:background="@drawable/btn_white_outline_round"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/lin_reverse_cmd"
+        android:layout_marginTop="@dimen/wh_20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/wh_30"
+            android:text="Reverse cmd: "
+            android:textSize="@dimen/wh_18"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/et_dev_reverse_cmd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/wh_30"
+            android:layout_marginLeft="@dimen/wh_15"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Name"
+            android:textColorHint="@color/gray_10"
+            android:textColor="@color/white"
+            android:textSize="@dimen/wh_18"
+            android:padding="@dimen/wh_10"
+            android:background="@drawable/btn_white_outline"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/wh_20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/wh_30"
+            android:text="Search name: "
+            android:textSize="@dimen/wh_18"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/et_dev_search_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/wh_30"
+            android:layout_marginLeft="@dimen/wh_15"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Name"
+            android:textColorHint="@color/gray_10"
+            android:textColor="@color/white"
+            android:textSize="@dimen/wh_18"
+            android:padding="@dimen/wh_10"
+            android:background="@drawable/btn_white_outline"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/wh_20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/wh_30"
+            android:text="Device Name:"
+            android:textSize="@dimen/wh_18"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/et_dev_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/wh_30"
+            android:layout_marginLeft="@dimen/wh_15"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Name"
+            android:textColorHint="@color/gray_10"
+            android:textColor="@color/white"
+            android:textSize="@dimen/wh_18"
+            android:padding="@dimen/wh_10"
+            android:background="@drawable/btn_white_outline"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="@dimen/wh_220"
+        android:layout_height="@dimen/wh_42"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/wh_40"
+        android:layout_marginBottom="@dimen/wh_60"
+        android:background="@drawable/btn_get_border"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/wh_20"
+        android:visibility="visible"/>
+
+    <Button
+        android:id="@+id/btn_change"
+        android:layout_width="@dimen/wh_220"
+        android:layout_height="@dimen/wh_42"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/wh_40"
+        android:layout_marginBottom="@dimen/wh_60"
+        android:background="@drawable/btn_get_border"
+        android:text="Change"
+        android:textAllCaps="false"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/wh_20"
+        android:visibility="visible"/>
+</LinearLayout>

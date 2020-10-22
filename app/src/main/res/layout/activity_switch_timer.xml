@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/color_gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wh_50"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="@dimen/wh_40"
+                android:layout_height="@dimen/wh_40"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="@dimen/wh_10"
+                android:src="@drawable/ic_action_back"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Set Timer"
+                android:textSize="@dimen/wh_20"
+                android:textColor="@color/white"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#555"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/wh_160">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wh_200">
+
+            <FrameLayout
+                android:id="@+id/frame_timepicker"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+
+                <TimePicker
+                    android:id="@+id/timepicker"
+                    android:timePickerMode="spinner"
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame_timecalcul"
+                android:layout_marginLeft="@dimen/mg_20"
+                android:layout_marginRight="@dimen/mg_20"
+                android:background="@drawable/back_timer_thread"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_thread"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/wh_50"
+                    android:layout_gravity="center"
+                    android:text="00:00:00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/wh_100"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wh_60">
+
+            <FrameLayout
+                android:id="@+id/frame_start"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:textColor="@color/white"
+                    android:text="@string/btn_start"
+                    android:background="@drawable/btn_get_border"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/wh_18"
+                    android:id="@+id/btn_start"
+                    android:layout_gravity="center"
+                    android:layout_width="@dimen/wh_160"
+                    android:layout_height="@dimen/wh_40"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame_cancel"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:textColor="@color/white"
+                    android:text="@string/btn_cancel"
+                    android:background="@drawable/btn_white_outline_round"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/wh_18"
+                    android:layout_gravity="center"
+                    android:layout_width="@dimen/wh_160"
+                    android:layout_height="@dimen/wh_40"/>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

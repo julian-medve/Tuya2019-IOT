@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/color_gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wh_50"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="@dimen/wh_40"
+                android:layout_height="@dimen/wh_40"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="@dimen/wh_10"
+                android:src="@drawable/ic_action_back"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Curtain Switch"
+                android:textSize="@dimen/wh_20"
+                android:textColor="@color/white"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#555"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/wh_160">
+
+        <LinearLayout
+            android:background="@drawable/back_timer_thread"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wh_180">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_plus"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_action_plus_black"
+                    android:layout_width="@dimen/wh_50"
+                    android:layout_height="@dimen/wh_50"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_curtain_number"
+                    android:text="10"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/wh_70"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_minus"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_action_minus_black"
+                    android:layout_width="@dimen/wh_50"
+                    android:layout_height="@dimen/wh_50"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/wh_100"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wh_60">
+
+            <FrameLayout
+                android:id="@+id/frame_start"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:textColor="@color/white"
+                    android:text="OK"
+                    android:background="@drawable/btn_get_border"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/wh_18"
+                    android:id="@+id/btn_verify"
+                    android:layout_gravity="center"
+                    android:layout_width="@dimen/wh_160"
+                    android:layout_height="@dimen/wh_40"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

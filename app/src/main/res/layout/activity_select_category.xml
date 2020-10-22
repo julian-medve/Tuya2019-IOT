@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SelectCategoryActivity"
+    android:orientation="vertical"
+    android:background="@mipmap/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wh_50"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Wybierz Urządzenie"
+                android:textSize="@dimen/wh_20"
+                android:textColor="@color/white"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#555"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rel_dev_category"
+        android:layout_width="match_parent"
+
+        android:layout_marginTop="@dimen/wh_20"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/wh_30"
+        android:layout_marginRight="@dimen/wh_30"/>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="@dimen/wh_220"
+        android:layout_height="@dimen/wh_42"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/btn_get_border"
+        android:textColor="@color/text_white"
+        android:text="@string/device_next"
+        android:textSize="@dimen/wh_20"
+        android:textAllCaps="false"
+        android:layout_marginTop="@dimen/wh_40"
+        android:layout_marginBottom="@dimen/wh_40"/>
+</LinearLayout>

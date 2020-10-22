@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:alpha="0.8"
+    tools:context=".activity.WidgetActivity">
+
+    <TextView
+        android:id="@+id/tv_voiceText"
+        android:layout_marginTop="@dimen/mg_140"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/mg_28"
+        android:text="You can ask me to:"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <com.skyfishjy.library.RippleBackground
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/BottonRaw"
+        android:id="@+id/rippleView"
+        app:rb_color="#4CCFFD"
+        app:rb_radius="40dp"
+        app:rb_rippleAmount="3"
+        app:rb_duration="2000"
+        app:rb_scale="3">
+
+        <RelativeLayout
+            android:id="@+id/img_voice_recoding"
+            android:layout_width="@dimen/wh_100"
+            android:layout_height="@dimen/wh_100"
+            android:layout_centerInParent="true"
+            android:layout_above="@+id/frame_txt_wrap"
+            android:layout_marginBottom="@dimen/wh_30">
+
+            <ImageView
+                android:id="@+id/voice_switch_ring"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ring_widget_ledwhite"/>
+
+            <ImageView
+                android:id="@+id/img_switch"
+                android:layout_width="@dimen/wh_30"
+                android:layout_height="@dimen/wh_30"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_voice_device"
+                android:visibility="visible"/>
+        </RelativeLayout>
+
+    </com.skyfishjy.library.RippleBackground>
+
+    <RelativeLayout
+        android:id="@+id/BottonRaw"
+        android:layout_marginBottom="@dimen/mg_50"
+        android:layout_marginRight="@dimen/mg_30"
+        android:layout_marginLeft="@dimen/mg_30"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="@dimen/mg_100">
+
+        <Button
+            android:text="\?"
+            android:textColor="@color/white"
+            android:textSize="@dimen/mg_20"
+            android:background="@drawable/ring_white_botton"
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/mg_40"
+            android:layout_height="@dimen/mg_40"/>
+
+        <TextView
+
+            android:text="Dodaj do ekranu glownego"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:src="@drawable/ic_clear"
+            android:padding="@dimen/mg_5"
+            android:background="@drawable/ring_white_botton"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/mg_40"
+            android:layout_height="@dimen/mg_40"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

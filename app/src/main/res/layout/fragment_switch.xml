@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/color_gradient"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wh_50"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/frame_option"
+            android:layout_width="@dimen/wh_60"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_width="@dimen/wh_40"
+                android:layout_height="@dimen/wh_30"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_speech_setting" />
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#555"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/lin_dev_option_wrapper"
+            android:layout_width="@dimen/wh_60"
+            android:layout_height="@dimen/mg_160"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:id="@+id/frame_speech_setting"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="@dimen/wh_40"
+                    android:layout_height="@dimen/wh_30"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_action_voice_setting" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame_edit_device"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="@dimen/wh_40"
+                    android:layout_height="@dimen/wh_30"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_action_edit" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame_edit_icon"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="@dimen/mg_40"
+                    android:layout_height="@dimen/mg_30"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/ic_edit"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_switch"
+            android:layout_width="@dimen/wh_200"
+            android:layout_height="@dimen/wh_200"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/fram_txt_wrap"
+            android:layout_marginBottom="@dimen/wh_30">
+
+            <ImageView
+                android:id="@+id/img_switch_ring"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ring_blue"/>
+
+            <ImageView
+                android:id="@+id/img_switch"
+                android:layout_width="@dimen/wh_60"
+                android:layout_height="@dimen/wh_60"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/ic_dev1"
+                android:visibility="visible"/>
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/txt_device_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/fram_txt_wrap"
+            android:layout_marginBottom="@dimen/mg_10"
+            android:gravity="center"
+            android:text="@string/demo_device_name"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/ts_18"
+            android:visibility="gone"/>
+
+        <FrameLayout
+            android:id="@+id/fram_txt_wrap"
+            android:layout_width="150dp"
+            android:layout_height="@dimen/wh_30"
+            android:layout_centerInParent="true"
+            android:background="@drawable/round_border_white"
+            android:alpha="0.3"
+            android:paddingRight="@dimen/wh_20"
+            android:paddingLeft="@dimen/wh_20">
+
+            <TextView
+                android:id="@+id/txt_recognized"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/demo_recognized_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/wh_15"
+                android:inputType="numberSigned"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_recognise_view"
+            android:layout_below="@+id/fram_txt_wrap"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/mg_20" >
+            <com.skyfishjy.library.RippleBackground
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/rippleView"
+                app:rb_color="#4CCFFD"
+                app:rb_radius="23dp"
+                app:rb_rippleAmount="3"
+                app:rb_duration="2000"
+                app:rb_scale="3">
+
+                <ImageView
+                    android:id="@+id/centerImage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="fitXY"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_voice_device" />
+            </com.skyfishjy.library.RippleBackground>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/txt_real"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_recognise_view"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/ts_16"
+            android:gravity="center"
+            android:visibility="gone"/>
+
+<!--        <include-->
+<!--            layout="@layout/model_divice_info"/>-->
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wh_50"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="@dimen/wh_40"
+                android:layout_height="@dimen/wh_40"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="@dimen/wh_10"
+                android:src="@drawable/ic_action_back"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Select Room"
+                android:textSize="@dimen/wh_20"
+                android:textColor="@color/white"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#555"
+        android:layout_marginTop="@dimen/wh_50"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/btn_room_select"
+        android:layout_marginStart="@dimen/mg_36"
+        android:layout_marginEnd="@dimen/mg_36"
+        android:layout_marginTop="@dimen/wh_80"
+        android:layout_marginBottom="@dimen/mg_36"
+        android:orientation="vertical">
+
+        <GridView
+            android:id="@+id/grid_room_select"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/grid_border"
+            android:paddingTop="@dimen/mg_20"
+            android:paddingBottom="@dimen/mg_20"
+            android:scrollbars="none"
+            android:verticalSpacing="10dp"
+            android:gravity="center"
+            android:numColumns="3">
+        </GridView>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_room_select"
+        android:layout_width="@dimen/wh_220"
+        android:layout_height="@dimen/wh_42"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/mg_50"
+        android:layout_centerHorizontal="true"
+        android:background="@color/btn_color"
+        android:textColor="@color/text_white"
+        android:text="@string/room_select"
+        android:textAllCaps="false"/>
+</RelativeLayout>

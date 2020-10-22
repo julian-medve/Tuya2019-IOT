@@ -1,0 +1,224 @@
+<resources>
+    <string name="app_name">CustomTuya</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Login Activity -->
+    <string name="hint_user_info">Mobile Number or Email</string>
+    <string name="hint_user_email">Email</string>
+    <string name="hint_user_pass">Password</string>
+    <string name="hint_new_user_pass">New Password</string>
+    <string name="btn_forgot_pass">Forgot Password</string>
+    <string name="btn_sign_in">Sign In</string>
+    <string name="btn_sign_up">Sign Up</string>
+    <string name="hint_have_account">Don\'t have an account\?</string>
+
+    <!-- Singup Activity -->
+    <string name="hint_confirm_pass">Confirm Password</string>
+    <string name="hint_verification_code">Verification Code</string>
+    <string name="hint_country_code">Country Code</string>
+    <string name="btn_get_code">Get</string>
+
+    <!-- Main Activity -->
+    <string name="text_main">Witaj</string>
+
+    <string name="menu_profile">Profile</string>
+    <string name="menu_scene">Scene</string>
+    <string name="menu_history">History</string>
+    <string name="menu_setting">Setting</string>
+    <string name="menu_signout">SignOut</string>
+    <string name="menu_add_device">Device Add</string>
+    <string name="menu_add_room">Room Add</string>
+    <string name="no_net_info">Network error, please check</string>
+    <string name="channel_name">Channel_Name</string>
+    <string name="channel_description">Channel_Description</string>
+
+    <!-- Room Add Activity -->
+    <string name="room_add">Add</string>
+    <string name="room_select">Select</string>
+    <string name="hint_room_name">New Room Name</string>
+    <string name="text_room_type">Room Type</string>
+    <string name="text_select_room">Please select room</string>
+
+    <!-- Device Select Activity -->
+    <string name="device_next">Next</string>
+    <string name="text_device_select">Choose Device Type</string>
+    <string name="text_device_zigbee">(zigbee)</string>
+    <string name="text_device_bluetooth">(bluetooth)</string>
+
+    <!-- Device Tip Activity -->
+    <string name="text_device_tip">Instructor light is quickly flashing</string>
+    <!-- Device ZigBee Tip Activity -->
+    <string name="confirm_device_gateway">Make mobile phones and gateways under the same network</string>
+    <!-- Dialog Utils -->
+    <string name="dialog_simple_confirm_title">Tip</string>
+    <string name="dialog_confirm">Confirm</string>
+    <string name="dialog_cancel">Cancel</string>
+
+    <!-- Device Connect Setting Activity -->
+    <string name="hint_wifi_password">Wifi Password</string>
+    <string name="btn_use_other_wifi">User other Wi-Fi</string>
+    <string name="text_wifi_status">Wi-Fi at Present:</string>
+
+    <!-- Device GateWay Activity -->
+    <string name="confirm_add_gateway_state">Confirm CONFIG IND lights on \n(green)</string>
+    <string name="confirm_add_subdevice_state">Confirm indicator rapidly blink</string>
+    <!-- Profile Fragment-->
+    <string name="btn_profile_nickname">Nick Name</string>
+    <string name="btn_profile_update">Update</string>
+    <string name="hint_profile_name">Name</string>
+    <string name="hint_nickname">Please type your nickname</string>
+    <string name="modify_password_success">Password is changed\n Please sign in again</string>
+
+    <!-- Device Name -->
+    <string name="demo_device_name">Device Name</string>
+    <string name="demo_recognized_text">Recognized Text</string>
+
+    <!-- Voice Settings -->
+    <string name="add_command">Add Command</string>
+    <string name="add_respond">Add Respond</string>
+    <string name="speech_setting_all">Voice Recognise Setting</string>
+    <string name="speech_turn_on">Turn on the device with voice</string>
+    <string name="speech_turn_on_respond">Respond after turn on</string>
+    <string name="speech_turn_off">Turn off the device with voice</string>
+    <string name="speech_turn_off_respond">Respond after turn off</string>
+    <string name="speech_turn_reverse">Turn reverse device</string>
+    <string name="speech_turn_get_on">If device get on</string>
+    <string name="speech_turn_get_off">If device get off</string>
+    <string name="speech_dimming_percent">Control Dimming percent</string>
+    <string name="speech_dimming_text">Command Prefix :</string>
+
+    <string name="loading">Loading…</string>
+    <string name="logining">Logining…</string>
+    <string name="phone_num_error">Mobile number error</string>
+    <string name="login_session_expired">Session Token Expired, please log in again</string>
+    <string name="action_tips_exit_hint">Tap once more to exit</string>
+    <string name="login_reget_code">Retry</string>
+    <string name="user_exists">The user has existed</string>
+    <string name="direct_login">Directly login?</string>
+    <string name="enter_keyword_tip">6-20 characters for password, including character, numbers,
+        symbols
+    </string>
+    <string name="reget_validation_second">(%d s)</string>
+    <string name="no_device_found">Device not found</string>
+
+    <string name="simple_confirm_title">Tip</string>
+    <string name="notify_location_setup">Enable phone location permission to find nearby Wi-Fi devices</string>
+    <string name="setup">Setting</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="ez_notSupport_5G">This app is supported only on 2.4GHz Wi-Fi channels</string>
+    <string name="ez_notSupport_5G_change">Change</string>
+    <string name="ez_notSupport_5G_continue">Continue</string>
+    <string name="ez_notSupport_5G_tip">This app is supported only on 2.4GHz Wi-Fi channels, please
+        retry
+    </string>
+
+    <string name="connect_phone_to_network">Please make sure your phone connected to Wi-Fi.</string>
+    <string name="ez_connecting_device_title">Try to connect device</string>
+    <string name="ez_connecting_devicei_note1">Device is connecting</string>
+    <string name="ez_connecting_device_note2">Keep router, phone and device within\n valid
+        distance
+    </string>
+    <string name="ez_current_no_wifi">Phone is not connecting Wi-Fi at present</string>
+
+    <string name="add_device_find_dev">Find device</string>
+    <string name="add_device_initialize">Initialize device</string>
+    <string name="add_device_reg_cloud">Register device to the cloud</string>
+    <string name="ap_error_description">Connection error, refer to help and retry</string>
+    <string name="config_device_init_tip">Initializing the device&#046;&#046;&#046;</string>
+    <string name="ez_status_success">Add successfully</string>
+    <string name="ap_error_phone">Contact us</string>
+    <string name="retry">Retry</string>
+    <string name="finish">Finish</string>
+    <string name="ez_status_share">Share with family</string>
+    <string name="network_time_out">Network connection error, please check</string>
+    <string name="ap_connect_description">Open phone \"setting-WLAN\" and connect to the Wi-Fi
+        network
+    </string>
+    <string name="ap_connect_go">Connect now</string>
+    <string name="ap_connect_help">Not connecting? Refer to help</string>
+
+    <string name="ap_error_title">Connection error</string>
+    <string name="ec_default_device_name">Smart device-%s</string>
+    <string name="ec_find_add_device">Add</string>
+    <string name="ec_find_add_device_title">Add Device</string>
+    <string name="ez_add_progress">Progress</string>
+
+    <string name="logout_loading">Exiting, please wait&#046;&#046;&#046;</string>
+
+    //======= firebase ==================//
+    <string name="default_notification_channel_id">default_noti_channel</string>
+    <string name="btn_start">Start</string>
+    <string name="btn_cancel">Stop</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+
+
+    //========= weather ============
+
+    <string name="clear_sky">Czyste niebo</string>
+    <string name="few_clouds">Kilka chmur</string>
+    <string name="scattered_clouds">Rozproszone chmury</string>
+    <string name="shower_rain">Lekkie opady</string>
+    <string name="rain">Deszcz</string>
+    <string name="thunderstorm">Burza</string>
+    <string name="snow">Śnieg</string>
+    <string name="mist">Zamglenie</string>
+
+
+    <string name="thunderstorm_with_light_rain">burza z piorunami i lekki deszcz</string>
+    <string name="thunderstorm_with_rain">burza z deszczem</string>
+    <string name="thunderstorm_with_heavy_rain">burza z ulewnym deszczem</string>
+    <string name="light_thunderstorm">lekka burza z piorunami</string>
+    <string name="heavy_thunderstorm">ciężka burza z piorunami</string>
+    <string name="ragged_thunderstorm">poszarpana burza z piorunami</string>
+    <string name="thunderstorm_with_light_drizzle">burza z piorunami i lekka mżawka</string>
+    <string name="thunderstorm_with_drizzle">burza z mżawką</string>
+    <string name="thunderstorm_with_heavy_drizzle">burza z piorunami i silną mżawką</string>
+
+    <string name="light_intensity_drizzle">intensywna mżawka</string>
+    <string name="drizzle">mżawka</string>
+    <string name="heavy_intensity_drizzle">intensywna mżawka</string>
+    <string name="light_intensity_drizzle_rain">lekki intensywny mżawka deszcz</string>
+    <string name="drizzle_rain">mżawka</string>
+    <string name="heavy_intensity_drizzle_rain">intensywny deszcz mżawkowy</string>
+    <string name="shower_rain_and_drizzle">prysznic, deszcz i mżawka</string>
+    <string name="heavy_shower_rain_and_drizzle">ulewny deszcz i mżawka</string>
+    <string name="shower_drizzle">mżawka prysznicowa</string>
+
+    <string name="light_rain">lekki deszcz</string>
+    <string name="moderate_rain">umiarkowany deszcz</string>
+    <string name="heavy_intensity_rain">intensywny deszcz</string>
+    <string name="very_heavy_rain">bardzo ulewny deszcz</string>
+    <string name="extreme_rain">ekstremalny deszcz</string>
+    <string name="freezing_rain">marznący deszcz</string>
+    <string name="light_intensity_shower_rain">intensywny prysznic deszcz</string>
+    <string name="heavy_intensity_shower_rain">intensywny deszcz</string>
+    <string name="ragged_shower_rain">poszarpany deszcz</string>
+
+    <string name="light_snow">lekkie opady śniegu</string>
+    <string name="heavy_snow">Duże opady śniegu</string>
+    <string name="sleet">Śnieg z deszczem</string>
+    <string name="light_shower_sleet">Lekki prysznic ze śniegiem</string>
+    <string name="shower_sleet">Prysznic ze śniegiem</string>
+    <string name="light_rain_and_snow">Lekki deszcz i śnieg</string>
+    <string name="rain_and_snow">Deszcz i śnieg</string>
+    <string name="light_shower_snow">Lekki deszcz ze śniegiem</string>
+    <string name="shower_snow">Prysznic śniegu</string>
+    <string name="heavy_shower_snow">Ulewny deszcz</string>
+
+
+    <string name="smoke">palić</string>
+    <string name="haze">mgła</string>
+    <string name="sand_dust_whirls">wiry piasku / pyłu</string>
+    <string name="fog">mgła</string>
+    <string name="sand">piasek</string>
+    <string name="dust">kurz</string>
+    <string name="volcanic_ash">pył wulkaniczny</string>
+    <string name="squalls">szkwały</string>
+    <string name="tornado">tornado</string>
+
+    <string name="broken_clouds">Urwanie chmury</string>
+    <string name="overcast_clouds">zachmurzenie</string>
+
+</resources>

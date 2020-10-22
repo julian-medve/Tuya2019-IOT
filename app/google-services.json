@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "805815295872",
+    "firebase_url": "https://tuya-push-test.firebaseio.com",
+    "project_id": "tuya-push-test",
+    "storage_bucket": "tuya-push-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:805815295872:android:1a2266c6dee77680b7ab65",
+        "android_client_info": {
+          "package_name": "com.test.tyapp.longhuan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "805815295872-rq9t6rg59rhbgfojf9lpuviad6mt1pt1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.test.tyapp.longhuan",
+            "certificate_hash": "4cd1ab313ed93ab144cb3fff9dbd7954fa62c59b"
+          }
+        },
+        {
+          "client_id": "805815295872-3ujhgkq62uucad2mlti9ivd0221cmm7p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLsDbFPvOnVuQJCcocMM38Bj-KvGsAn3o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "805815295872-3ujhgkq62uucad2mlti9ivd0221cmm7p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

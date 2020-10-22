@@ -1,0 +1,111 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/green_80</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.Transparent" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="text_password_input">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:background">@null</item>
+        <item name="android:paddingStart">@dimen/text_padding_start</item>
+        <item name="android:paddingEnd">@dimen/mg_44</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:textSize">@dimen/ts_18</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColorHint">@color/text_grey</item>
+        <item name="android:textColor">@color/text_white</item>
+    </style>
+
+    <!-- Normal loading -->
+    <style name="ProgressBar.Normal" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:minWidth">23dp</item>
+        <item name="android:maxWidth">23dp</item>
+        <item name="android:minHeight">23dp</item>
+        <item name="android:maxHeight">23dp</item>
+        <item name="android:textColor">@color/color_626262</item>
+    </style>
+
+    <style name="Progress.Dialog" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">@color/color_accent</item>
+        <item name="android:lineSpacingExtra">@dimen/wh_4</item>
+    </style>
+
+    <style name="Dialog.Alert.NoTitle" parent="@style/Dialog.Alert">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="Dialog.Alert" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/color_accent</item>
+        <item name="android:lineSpacingExtra">@dimen/wh_4</item>
+    </style>
+
+    <style name="Dialog.Alert.Multichoice" parent="@style/Dialog.Alert">
+        <!--<item name="android:listChoiceIndicatorMultiple">@null</item>-->
+    </style>
+
+    <style name="Dialog.Alert.Singlechoice" parent="@style/Dialog.Alert">
+        <!--<item name="android:listChoiceIndicatorSingle">@null</item>-->
+    </style>
+
+    <!-- Setting item form item -->
+    <style name="ListItem.ItemNormal" parent="android:Widget">
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">@dimen/ts_12</item>
+        <item name="android:paddingBottom">@dimen/ts_12</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <!-- Listview has a dividing line -->
+    <style name="List_Normal">
+        <item name="android:fadingEdge">none</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+        <item name="android:divider">@color/line_color</item>
+        <item name="android:dividerHeight">@dimen/single_pix</item>
+        <item name="android:listDivider">@drawable/color_line</item>
+        <item name="android:footerDividersEnabled">false</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:scrollbarThumbVertical">@mipmap/scrollbar_thumb</item>
+        <item name="android:scrollbarTrackVertical">@null</item>
+    </style>
+
+    <!-- Plain text button -->
+    <style name="Button.Normal" parent="android:Widget.Button">
+        <item name="android:layout_height">@dimen/wh_36</item>
+        <item name="android:minWidth">@dimen/wh_88</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/ts_18</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:background">@drawable/button_orange</item>
+        <item name="android:textColor">@color/color_orange</item>
+    </style>
+</resources>
